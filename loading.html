@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body {
+            background-color: rgb(139, 231, 231);
+        }
+
+        .container {
+            width: 150px;
+            margin: auto;
+            margin-top: 100px;
+            height: 150px;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            display: flex;
+            position: relative;
+        }
+
+        .dots {
+            width: 7px;
+            height: 7px;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            left: 9px;
+            top: -3px;
+            transform-origin: 9px 15px;
+            animation: orbit 1.5s infinite linear;
+        }
+
+        .dot2 {
+            animation-delay: 0.2s;
+        }
+
+        .dot3 {
+            animation-delay: 0.4s;
+        }
+
+        .dot4 {
+            animation-delay: 0.6s;
+        }
+
+        .dot5 {
+            animation-delay: 0.8s;
+        }
+
+        .dot6 {
+            animation-delay: 1.0s;
+        }
+
+        @keyframes orbit {
+            from {
+                transform: rotate(5deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle">
+            <div class="dots dot1"></div>
+            <div class="dots dot2"></div>
+            <div class="dots dot3"></div>
+            <div class="dots dot4"></div>
+            <div class="dots dot5"></div>
+            <div class="dots dot6"></div>
+        </div>
+        <div class="welcome">Welcome</div>
+    </div>
+</body>
+
+</html>
